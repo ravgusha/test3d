@@ -1,0 +1,15 @@
+# IDE
+.idea/
+.vscode/
+
+# Misc
+sandbox
+node_modules
+dist
+coverage
+*.xml
+
+# yarn
+.pnp.js
+.yarnrc.yml
+.yarn
