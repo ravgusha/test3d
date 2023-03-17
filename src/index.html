@@ -27,24 +27,26 @@
 				</div>
 				<img class="aside__logo" src="../src/img/logo.svg" alt="" />
 			</div>
-			<div class="form">
+			<div class="callback-form">
 				<form action="" method="post">
-					<div class="txt_field">
+					<div class="callback-form__input">
 						<input type="text" required />
 						<span></span>
 						<label>Name</label>
 					</div>
-					<div class="txt_field">
+					<div class="callback-form__input">
 						<input type="password" required />
 						<span></span>
 						<label>Phone</label>
 					</div>
-					<div class="txt_field">
-						<input type="password" required />
-						<span></span>
+					<div class="callback-form__range">
+						<div class="value left">Hot</div>
+						<input type="range" min="0" max="100" value="50" steps="1" class="slider" />
+						<div class="value right">Cold</div>
 						<label>Temp</label>
 					</div>
-					<div class="txt_field">
+
+					<div class="callback-form__input">
 						<input type="password" required />
 						<span></span>
 						<label>Comments</label>
