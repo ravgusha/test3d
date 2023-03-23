@@ -27,38 +27,36 @@
 				</div>
 				<img class="aside__logo" src="../src/img/logo.svg" alt="" />
 			</div>
-			<div class="callback-form">
-				<form action="" method="post">
-					<div class="callback-form__input">
-						<input type="text" required />
-						<span></span>
-						<label>Name</label>
+			<form class="callback-form" action="" method="post">
+				<div class="callback-form__field">
+					<input type="text" required />
+					<span></span>
+					<label>Name</label>
+				</div>
+				<div class="callback-form__field">
+					<input type="tel" required />
+					<span></span>
+					<label>Phone</label>
+				</div>
+				<div class="callback-form__range">
+					<div class="value left">Hot</div>
+					<input type="range" min="0" max="100" value="50" steps="1" class="slider" />
+					<div class="value right">Cold</div>
+					<label>Temp</label>
+				</div>
+				<div class="callback-form__field">
+					<input type="password" required />
+					<span></span>
+					<label>Comments</label>
+				</div>
+				<div class="callback-form__footer">
+					<input type="submit" value="Call me" />
+					<div>
+						By pressing “Send” button I agree with
+						<a href="#"> Privacy Policy</a>
 					</div>
-					<div class="callback-form__input">
-						<input type="password" required />
-						<span></span>
-						<label>Phone</label>
-					</div>
-					<div class="callback-form__range">
-						<div class="value left">Hot</div>
-						<input type="range" min="0" max="100" value="50" steps="1" class="slider" />
-						<div class="value right">Cold</div>
-						<label>Temp</label>
-					</div>
-
-					<div class="callback-form__input">
-						<input type="password" required />
-						<span></span>
-						<label>Comments</label>
-					</div>
-					<div class="pass">Forget Password?</div>
-					<input type="submit" value="Login" />
-					<div class="signup_link">
-						No a member?
-						<a href="#">signup</a>
-					</div>
-				</form>
-			</div>
+				</div>
+			</form>
 		</div>
 	</body>
 </html>
