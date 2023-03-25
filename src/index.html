@@ -20,43 +20,49 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="aside">
-				<div class="aside__title">Send <br />a request</div>
-				<div class="aside__text">
-					Leave your contacts and we will contact you as soon as possible
-				</div>
-				<img class="aside__logo" src="../src/img/logo.svg" alt="" />
-			</div>
-			<form class="callback-form" action="" method="post">
-				<div class="callback-form__field">
-					<input type="text" required />
-					<span></span>
-					<label>Name</label>
-				</div>
-				<div class="callback-form__field">
-					<input type="tel" required />
-					<span></span>
-					<label>Phone</label>
-				</div>
-				<div class="callback-form__range">
-					<div class="value left">Hot</div>
-					<input type="range" min="0" max="100" value="50" steps="1" class="slider" />
-					<div class="value right">Cold</div>
-					<label>Temp</label>
-				</div>
-				<div class="callback-form__field">
-					<input type="password" required />
-					<span></span>
-					<label>Comments</label>
-				</div>
-				<div class="callback-form__footer">
-					<input type="submit" value="Call me" />
-					<div>
-						By pressing “Send” button I agree with
-						<a href="#"> Privacy Policy</a>
+			<main>
+				<div class="aside">
+					<div class="aside__title">Send <br />a request</div>
+					<div class="aside__text">
+						Leave your contacts and we will contact you as soon as possible
 					</div>
+					<img class="aside__logo" src="../src/img/logo.svg" alt="" />
 				</div>
-			</form>
+				<form class="callback-form" action="" method="post">
+					<div class="callback-form__field">
+						<input type="text" required />
+						<span></span>
+						<label>Name</label>
+					</div>
+					<div class="callback-form__field">
+						<input type="tel" required />
+						<span></span>
+						<label>Phone</label>
+					</div>
+					<div class="callback-form__range">
+						<div class="value left">Hot</div>
+						<input type="range" min="0" max="100" value="50" steps="1" class="slider" />
+						<div class="value right">Cold</div>
+						<label>Temp</label>
+					</div>
+					<div class="callback-form__field">
+						<input type="password" required />
+						<span></span>
+						<label>Comments</label>
+					</div>
+					<div class="callback-form__footer">
+						<input type="submit" value="Call me" />
+						<div>
+							By pressing “Send” button I agree with
+							<a href="#"> Privacy Policy</a>
+						</div>
+					</div>
+				</form>
+			</main>
+			<footer class="footer">
+				<p class="footer__copyrights">© 2022 Luxury residence</p>
+				<a class="footer__privacy" href="#">Privacy Policy</a>
+			</footer>
 		</div>
 	</body>
 </html>
