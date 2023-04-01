@@ -3,6 +3,14 @@
 html {
 	font-family: 'GHEA Grapalat';
 	font-size: 10px;
+
+	@media screen and (max-width: 599px) {
+		font-size: 8px;
+	}
+
+	@media screen and (max-width: 335px) {
+		font-size: 7px;
+	}
 }
 
 body {
@@ -10,35 +18,75 @@ body {
 
 	.wrapper {
 		padding: 3% 24.6% 3% 4.5%;
+		@media screen and (max-width: 1279px) {
+			padding-right: 9%;
+			padding-left: 9%;
+		}
 
 		main {
+			@media screen and (min-width: 600px) and (max-width: 959px) {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			@media screen and (max-width: 599px) {
+				flex-direction: column;
+				align-items: center;
+			}
+
 			color: #eeebe6;
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 15.4rem;
 
 			.aside {
+				@media screen and (max-width: 959px) {
+					display: flex;
+					align-items: baseline;
+					justify-content: space-between;
+					width: 100%;
+				}
+
+				img {
+					@media screen and (max-width: 599px) {
+						width: 150px;
+					}
+
+					@media screen and (max-width: 500px) {
+						display: none;
+					}
+				}
+
 				&__title {
 					font-family: 'GHEA Mariam';
-					font-size: 66px;
+					font-size: 6.6rem;
 					text-transform: uppercase;
 					max-width: 380px;
 					line-height: 110%;
 					letter-spacing: 0.03em;
-					margin-bottom: 54px;
+					margin-bottom: 5.4rem;
+					white-space: nowrap;
 				}
 
 				&__text {
 					max-width: 200px;
-					font-size: 14px;
+					font-size: 1.4rem;
 					line-height: 150%;
-					margin: 0 0 93px 4px;
+					margin: 0 0 9.3rem 0.4rem;
 					letter-spacing: 0.05em;
 					text-transform: uppercase;
+
+					@media screen and (max-width: 500px) {
+						margin: 0 0 9.3% 0;
+					}
 				}
 			}
 
 			.callback-form {
+				@media screen and (max-width: 959px) {
+					padding-top: 0;
+					width: auto;
+				}
+
 				padding-top: 246px;
 				width: 538px;
 
@@ -51,8 +99,8 @@ body {
 						color: #fff;
 						width: 100%;
 						padding: 0 5px;
-						height: 40px;
-						font-size: 16px;
+						height: 4rem;
+						font-size: 1.6rem;
 						border: none;
 						background: none;
 						outline: none;
@@ -76,7 +124,7 @@ body {
 						left: 0;
 						color: #adadad;
 						transform: translateY(-50%);
-						font-size: 14px;
+						font-size: 1.4rem;
 						line-height: 150%;
 						pointer-events: none;
 						transition: 0.5s;
@@ -86,7 +134,7 @@ body {
 					span::before {
 						content: '';
 						position: absolute;
-						top: 40px;
+						top: 4rem;
 						left: 0;
 						width: 0%;
 						height: 2px;
@@ -96,6 +144,10 @@ body {
 
 					&:nth-child(4) {
 						margin-bottom: 13.5rem;
+
+						@media screen and (max-width: 1279px) {
+							margin-bottom: 50px;
+						}
 					}
 				}
 
@@ -114,7 +166,7 @@ body {
 						left: 0;
 						color: #adadad;
 						transform: translateY(-50%);
-						font-size: 14px;
+						font-size: 1.4rem;
 						line-height: 150%;
 						pointer-events: none;
 						transition: 0.5s;
@@ -122,7 +174,7 @@ body {
 
 					.value {
 						position: absolute;
-						font-size: 9px;
+						font-size: 0.9rem;
 						line-height: 150%;
 						letter-spacing: 0.05em;
 						text-transform: uppercase;
@@ -161,7 +213,7 @@ body {
 				&__footer {
 					display: flex;
 					align-items: center;
-					gap: 72px;
+					gap: 7.2rem;
 
 					input[type='submit'] {
 						color: #eeebe6;
@@ -169,13 +221,13 @@ body {
 						outline: none;
 						border: 1px solid #eeebe6;
 						border-radius: 100px;
-						padding: 20px 60px;
+						padding: 2rem 6rem;
 						text-transform: uppercase;
-						font-size: 12px;
+						font-size: 1.2rem;
 					}
 
 					div {
-						font-size: 13px;
+						font-size: 1.3rem;
 						text-transform: uppercase;
 						max-width: 205px;
 						line-height: 150%;
@@ -193,11 +245,12 @@ body {
 		flex-grow: 1;
 		flex-shrink: 1;
 		flex-basis: 100%;
+		padding-top: 11.4%;
 
 		&__copyrights {
 			text-transform: uppercase;
 			color: #ff69b4;
-			font-size: 12px;
+			font-size: 1.2rem;
 			line-height: 150%;
 			letter-spacing: 0.05em;
 		}
@@ -205,7 +258,7 @@ body {
 		&__privacy {
 			text-transform: uppercase;
 			color: #eeebe6;
-			font-size: 12px;
+			font-size: 1.2rem;
 			line-height: 150%;
 			letter-spacing: 0.05em;
 		}
