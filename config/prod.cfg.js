@@ -28,9 +28,7 @@ module.exports = merge(baseConfig, {
 				vendors: {
 					test: /[\\/]node_modules[\\/]/,
 					name(module) {
-						const packageName = module.context.match(
-							/[\\/]node_modules[\\/](.*?)([\\/]|$)/
-						)[1];
+						const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
 						return `npm.${packageName.replace(/@/g, '')}`;
 					},
 					priority: -10,
@@ -216,10 +214,6 @@ function imageLoader() {
 				optipng: {
 					optimizationLevel: 7,
 				},
-				pngquant: {
-					quality: [0.65, 0.9],
-					speed: 4,
-				},
 				mozjpeg: {
 					progressive: true,
 					quality: 65,
@@ -238,16 +232,16 @@ function svgoLoader() {
 		options: {
 			name: 'preset-default',
 			overrides: {
-				'convertPathData': false,
-				'removeUselessDefs': false,
-				'cleanupIDs': false,
-				'convertColors': {
+				convertPathData: false,
+				removeUselessDefs: false,
+				cleanupIDs: false,
+				convertColors: {
 					params: {
 						shorthex: false,
-					}
+					},
 				},
-				'removeTitle': true
-			}
+				removeTitle: true,
+			},
 		},
 	};
 }
