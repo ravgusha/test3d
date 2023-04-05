@@ -225,6 +225,10 @@ body {
 						padding: 2rem 6rem;
 						text-transform: uppercase;
 						font-size: 1.2rem;
+
+						&:active {
+							transform: scale(0.95);
+						}
 					}
 
 					div {
